@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCPC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- header-starts -->
+    <header class="container-fluid" id="myHeader" style="z-index: 999999; background-color: #66bfbf;">
+        <div class="row py-3">
+            <div class="col-md-8 d-flex align-items-center justify-content-around py-sm-1">
+                <img src="./img/logo.png" alt="" style="width: 100px;">
+                <div>
+                    <h4 class="fw-bold fs-3">চট্টগ্রাম ক্যান্টনমেন্ট পাবলিক কলেজ</h4>
+                    <p class="">Baizid Bostami-4210, Chattogram Cantonment, Chattogram</p>
+                </div>
+            </div>
+            <div class="col-md-4 fw-light">
+                <div class="d-flex flex-column align-items-center">
+                    <p class="fw-bold my-0">EIIN: 13477</p>
+                    <p class="fw-bold my-0">College Code: 3024</p>
+                    <p class="my-0">✉ cpcc@gmail.com</p>
+                    <p>✆ 02-0345546556</p>
+                    <button class="btn btn-danger" type="button">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-ends -->
+    <!-- nav -->
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light w-100 mb-2 " style="z-index: 2000;font-weight: normal;">
+        <div class="container ">
+            <a href="https://ccpc.edu.bd" class="navbar-brand text-white px-2 " style="font-family: 'Ubuntu'!important; font-size: 16PX;   margin-right: 0px;">
+                <i class="fa fa-home" aria-hidden="true"></i> হোম
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+                aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="myNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2" style="font-family: 'Ubuntu'!important;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOurWords" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i> আমাদের কথা
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownOurWords">
+                            <li><a class="dropdown-item" href=""><i
+                                        class="fa fa-recycle" aria-hidden="true"></i> সভাপতির বাণী</a></li>
+                            <li><a class="dropdown-item" href=""><i
+                                        class="fa fa-laptop" aria-hidden="true"></i> অধ্যক্ষের বাণী</a></li>
+                            <li><a class="dropdown-item" href=""><i
+                                        class="fa fa-flask" aria-hidden="true"></i> প্রধান পৃষ্ঠপোষকের
+                                    বাণী</a></li>
+                            <li><a class="dropdown-item" href=""><i
+                                        class="fa fa-flask" aria-hidden="true"></i> মাস্টারপ্ল্যান</a></li>
+                            <li><a class="dropdown-item" href=""><i
+                                        class="fa fa-flask" aria-hidden="true"></i> প্রতিষ্ঠানের ইতিহাস</a>
+                            </li>
+                            <li><a class="dropdown-item" href="-and-vision"><i
+                                        class="fa fa-flask" aria-hidden="true"></i> লক্ষ্য ও উদ্দেশ্য</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/details/infrastructure"><i
+                                        class="fa fa-flask" aria-hidden="true"></i> ভৌত অবকাঠামো</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademic" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-book" aria-hidden="true"></i> একাডেমিক
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcademic">
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/details/code-of-conducts"><i
+                                        class="fa fa-file-text-o"></i> আচরণবিধি</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/details/guidelines-for-parents"><i
+                                        class="fa fa-file-text-o"></i> অভিভাবকের জন্য নির্দেশিকা</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/dress-code"><i
+                                        class="fa fa-file-text-o"></i> পোশাকরীতি</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://ccpc.edu.bd/download/results-of-inter-house-competition"><i
+                                        class="fa fa-file-text-o"></i> আন্ত:হাউজ প্রতিযোগিতার ফলাফল</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://ccpc.edu.bd/download/homework-and-class-lecture-documents"><i
+                                        class="fa fa-file-text-o"></i> হোমওয়ার্ক এবং ক্লাস লেকচার
+                                    ডকুমেন্ট</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/academic-calendar"><i
+                                        class="fa fa-file-text-o"></i> একাডেমিক ক্যালেন্ডার</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/syllabus"><i
+                                        class="fa fa-file-text-o"></i> পাঠ্যবইয়ের তালিকা ও সিলেবাস</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/class-routine"><i
+                                        class="fa fa-file-text-o"></i> ক্লাস রুটিন</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/exam-schedule"><i
+                                        class="fa fa-file-text-o"></i> পরীক্ষার সময়সূচি</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/co-curricular-activities"><i
+                                        class="fa fa-file-text-o"></i> সহশিক্ষাক্রমিক কার্যাবলী</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInfo" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-info px-1" aria-hidden="true"></i> তথ্য
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownInfo">
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/notice/null/0"><i
+                                        class="fa fa-newspaper-o"></i> নোটিশবোর্ড</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/news-events/news-and-events"><i
+                                        class="fa fa-newspaper-o"></i> নিউজ এন্ড ইভেন্টস</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/details/list-of-holidays"><i
+                                        class="fa fa-newspaper-o"></i> ছুটির তালিকা</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#"><i class="fa fa-newspaper-o"></i>
+                                    শিক্ষক পরিচিতি</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="https://ccpc.edu.bd/teacher-staff/0/0/0/0/0/0/1/Teacher/School"><i
+                                                class="fa fa-newspaper-o"></i> স্কুল শিক্ষক</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://ccpc.edu.bd/teacher-staff/0/0/0/0/0/0/1/Teacher/College"><i
+                                                class="fa fa-newspaper-o"></i> কলেজ শিক্ষক</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/accounting-branch"><i
+                                        class="fa fa-newspaper-o"></i> হিসাব শাখা</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/details/convenience"><i
+                                        class="fa fa-newspaper-o"></i> সুযোগ-সুবিধা</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmission" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-user-circle-o px-1" aria-hidden="true"></i> ভর্তি
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmission">
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/admission-circular"><i
+                                        class="fa fa-th-large"></i> সম্মান শাখার ভর্তি কার্যক্রম</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/apply-now"><i
+                                        class="fa fa-th-large"></i> কলেজ শাখার ভর্তি কার্যক্রম</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/admission-info"><i
+                                        class="fa fa-file-o"></i> স্কুল শাখার ভর্তির তথ্যাবলী</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/brief-information"><i
+                                        class="fa fa-file-o"></i> স্কুল শাখার ভর্তির চূড়ান্ত ফলাফল</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/fees-and-payment"><i
+                                        class="fa fa-file-o"></i> ফিস ও পেমেন্টস্</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/scholarship"><i
+                                        class="fa fa-file-o"></i> বৃত্তি ও স্টাইপেন্ড</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/uniforms"><i
+                                        class="fa fa-file-o"></i> ইউনিফর্ম</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/handbook"><i
+                                        class="fa fa-file-o"></i> হ্যান্ডবুক</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/fees-structure"><i
+                                        class="fa fa-file-o"></i> ফি স্ট্রাকচার</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmission" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-archive px-1" aria-hidden="true"></i> ক্যাম্পাস
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmission">
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/admission-circular"><i
+                                        class="fa fa-camera"></i> ফটো গ্যালারি</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/apply-now"><i
+                                        class="fa fa-file-video-o"></i> ভিডিও গ্যালারি</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmission" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-archive px-1" aria-hidden="true"></i>স্বাধীনতা কর্নার
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdmission">
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/admission-circular"><i
+                                        class="fa fa-camera"></i> স্বাধীনতা কর্নার</a></li>
+                            <li><a class="dropdown-item" href="https://ccpc.edu.bd/download/apply-now"><i
+                                        class="fa fa-file-video-o"></i> ভিডিও গ্যালারি</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://ccpc.edu.bd/download/apply-now" class="nav-link"><i class="fa fa-user-o px-1 "
+                                aria-hidden="true"></i> অনলাইনে আবেদন</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://ccpc.edu.bd/download/contact-us" class="nav-link"><i class="fa fa-envelope px-1"
+                                aria-hidden="true"></i> যোগাযোগ</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- nav-ends -->
+    <!-- home -->
+     <div class="container mt-2 px-0">
+      <!-- Latest Notices -->
+      <div class="news-block mx-0 px-0">
+        <div class="title"> News </div>
+        <div class="message">
+            <marquee style="display: flex; height: 20px;">
+                <ul class="msg-items">
+                    <li> Welcome to School Website. Developed By sm_ayman</li>
+                </ul>
+            </marquee>
+        </div>
+    </div>
+    
+        <!-- banner-starts -->
+        <div id="carouselExampleInterval" class="carousel slide mb-3" data-bs-ride="carousel">
+            <!-- Boosted mod -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <!-- End mod -->
+            <div class="carousel-inner" style="height: 400px;">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/banner_1.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/banner_2.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner_1.jpg" class="img-fluid" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- banner-ends -->
+        <!-- welcome-texts-starts -->
+        <div class="mb-5">
+            <h4>Welcome To Chattogram Cantonment Public College</h4>
+            <p class="text-secondary">17th October, 1961. The then Station Commander Colonel Ahmed Ali Sheik, T.P.K. –
+                invited the then
+                President of Pakistan Field Martial Md. Ayub Khan. NPK, H.J. to inaugurate the foundation of this
+                institution. According to the society registration act XXI 1860, this institution was established by
+                Chittagong Cantonment Public School Foundation. From 23rd October 1961 this institution started its
+                journey. After that many gracious and affluent men came forward to make this great endeavor successful
+                with monetary and moral support. Behind it there were sincerity and generosity.</p>
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-success">Read More</button>
+            </div>
+        </div>
+        <!-- welcome-texts-ends -->
+
+        <!-- two-column -->
+        <div class="row mb-5">
+            <!-- first-column -->
+            <div class="col-md-8 col-sm-12">
+                <!-- upcoming-events -->
+                <div class="shadow shadow-lg rounded-1 p-5">
+                    <h4 class="text-center">Upcoming Events</h4>
+                    <div class="row text-center">
+                        <div class="col-md-4"><img src="./img/events/events_1.jpg" class="img-fluid" alt="">
+                            <p>Sheikh Russel Day - 19th October</p>
+                        </div>
+                        <div class="col-md-4"><img src="./img/events/events_2.jpg" class="img-fluid" alt="">
+                            <p>Sheikh Russel Day - 19th October</p>
+                        </div>
+                        <div class="col-md-4"><img src="./img/events/events_3.jpg" class="img-fluid" alt="">
+                            <p>Sheikh Russel Day - 19th October</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- achievements -->
+                <div>
+                    <div class="shadow shadow-lg rounded-1 p-5">
+                        <h4 class="text-center">Achievemets</h4>
+                        <div class="row text-center">
+                            <div class="col-md-4 border border-1"><img src="img/achievements/achv_1.jpg"
+                                    class="img-fluid" alt="">
+                                <h6>Sword of Honor</h6>
+                                <p class="text-secondary">Glowing Success of CCPC</p>
+                            </div>
+                            <div class="col-md-4 border border-1"><img src="img/achievements/achv_2.jpg"
+                                    class="img-fluid" alt="">
+                                <h6>শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান ২০২৩</h6>
+                                <p class="text-secondary">জাতীয় শিক্ষা সপ্তাহ-২০২৩ এ বিভাগীয় পর্যায়ে শ্রেষ্ঠ শিক্ষা
+                                    প্রতিষ্ঠান ২০২৩</p>
+                            </div>
+                            <div class="col-md-4 border border-1"><img src="img/achievements/achv_3.jpg"
+                                    class="img-fluid" alt="">
+                                <h6>বিভাগীয় পর্যায়ের ফলাফল</h6>
+                                <p class="text-secondary">জাতীয় শিক্ষা সপ্তাহ-২০২৩ এ বিভাগীয় পর্যায়ের ফলাফল</p>
+                            </div>
+                            <div class="col-md-4 border border-1"><img src="img/achievements/achv_4.jpg"
+                                    class="img-fluid" alt="">
+                                <h6>জাতীয় শিক্ষা সপ্তাহ-২০২৪</h6>
+                                <p class="text-secondary">জাতীয় শিক্ষা সপ্তাহ-২০২৪ এ বিভাগীয় পর্যায়ে শ্রেষ্ঠ শিক্ষা
+                                    প্রতিষ্ঠান</p>
+                            </div>
+                            <div class="col-md-4 border border-1"><img src="img/achievements/achv_5.jpg"
+                                    class="img-fluid" alt="">
+                                <h6>জাতীয় শিক্ষা সপ্তাহ-২০২৪</h6>
+                                <p class="text-secondary">জাতীয় শিক্ষা সপ্তাহ-২০২৪ এ বিভাগীয় পর্যায়ে শ্রেষ্ঠ শিক্ষা
+                                    প্রতিষ্ঠান প্রধান</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second-column -->
+            <div class="col-md-4 mt-lg-0">
+                <!-- অনলাইন ভর্তি -->
+                <div>
+                    <div class="home-sidemenu-header p-1 text-center">
+                        <h5 class="text-white fw-bold mt-2">অনলাইন ভর্তি</h5>
+                    </div>
+                    <div class="bg-white">
+                        <img src="./img/logo.png" class="w-25" alt="">
+                        <button type="button" class="btn btn-outline-info">আবেদন করতে ক্লিক করুন</button>
+                    </div>
+                </div>
+                <!-- Golden-Jublee -->
+                <div class="mt-4 bg-white p-2">
+                    <div class="text-center border border-bottom-1">
+                        <h6 class="golden-txt">Golden Jubilee Independence Of Bangladesh</h6>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <img src="./img/golden.png" class="w-50" alt="">
+                        <ul>
+                            <li><a href="">আদেশ/ নোটিশ</a></li>
+                            <li><a href="">কার্যক্রম</a></li>
+                            <li><a href="">ছবি গ্যালারি</a></li>
+                            <li><a href="">ভিডিও</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- বাণী -->
+                <div class="mt-4">
+                    <!-- প্রধান পৃষ্ঠপোষকের বাণী -->
+                    <div>
+                        <div class="home-sidemenu-header p-1 text-center">
+                            <h5 class="text-white fw-bold mt-2">প্রধান পৃষ্ঠপোষকের বাণী</h5>
+                        </div>
+                        <div class="d-flex bg-white">
+                            <img src="./img/gen_mainur.jpeg" class="w-25" alt="">
+                            <div class="ps-2 pt-2">
+                                <h6>Maj General Md Mainur Rahman, SUP, awc, psc</h6>
+                                <p class="text-secondary">Chief Patron</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- সভাপতির বাণী -->
+                    <div>
+                        <div class="home-sidemenu-header mt-2 p-1 text-center">
+                            <h5 class="text-white fw-bold">সভাপতির বাণী</h5>
+                        </div>
+                        <div class="d-flex bg-white">
+                            <img src="./img/gen_rezaul.jpg" class="w-25" alt="">
+                            <div class="ps-2 pt-2">
+                                <h6>Brig Gen Rezaul Karim, ndc, psc</h6>
+                                <p class="text-secondary">Chairman</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- অধ্যক্ষের বাণী -->
+                    <div>
+                        <div class="home-sidemenu-header mt-2 p-1 text-center">
+                            <h5 class="text-white fw-bold">অধ্যক্ষের বাণী</h5>
+                        </div>
+                        <div class="d-flex bg-white">
+                            <img src="./img/principal.jpg" class="w-25" alt="">
+                            <div class="ps-2 pt-2">
+                                <h6>Col Mujibul Haque Sikder, PBGM</h6>
+                                <p class="text-secondary">Principal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- কলেজ ভিডিও -->
+                <div class="mt-4">
+                    <div class="home-sidemenu-header p-1 text-center">
+                        <h5 class="text-white fw-bold mt-2">কলেজ ভিডিও</h5>
+                    </div>
+                    <div class="embed-responsive embed-responsive-4by3 d-flex justify-content-center">
+                        <iframe class="embed-responsive-item rounded-bottom-2 w-100"
+                            src="https://www.youtube.com/embed/swOhEhqZZpU" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Notice Section -->
+                <div class="mt-4">
+                    <div class="notice-header home-sidemenu-header">
+                        Admission Notice | Academic Notice | Official Notice
+                    </div>
+                    <div class="marquee-container bg-white">
+                        <div class="marquee" id="marquee">
+                            <div class="notice-item">
+                                <div class="notice-date">
+                                    <span>20</span><br>
+                                    <span>May</span>
+                                </div>
+                                <div class="notice-content">
+                                    <div>১ম রিলিজ স্লিপের মাধ্যমে অনার্স ১ম বর্ষে ভর্তি</div>
+                                    <a href="#">View Notice...</a>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-date">
+                                    <span>13</span><br>
+                                    <span>May</span>
+                                </div>
+                                <div class="notice-content">
+                                    <div>2nd Monthly Test (XI) 2023-2024</div>
+                                    <a href="#">View Notice...</a>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-date">
+                                    <span>13</span><br>
+                                    <span>May</span>
+                                </div>
+                                <div class="notice-content">
+                                    <div>HSC Model Test (XII) 2022-2023</div>
+                                    <a href="#">View Notice...</a>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-date">
+                                    <span>28</span><br>
+                                    <span>Apr</span>
+                                </div>
+                                <div class="notice-content">
+                                    <div>একাদশ শ্রেণির অর্ধ-বার্ষিক পরীক্ষার উত্তরপত্র দেখানোর সময়সূচি ২০২৪</div>
+                                    <a href="#" class="fw-bold">View Notice...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-end mt-2">
+                        <button class="btn btn-success py-0"><a href="#"
+                                class="text-decoration-none text-white fw-light">See All Notices</a></button>
+                    </div>
+                </div>
+
+                <!-- --notice end- -->
+                <!-- ফেইসবুক পেজ -->
+                <div class="mt-4">
+                    <div class="home-sidemenu-header p-1 text-center">
+                        <h5 class="text-white fw-bold mt-2">ফেইসবুক পেজ</h5>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100042992360261"><img src="./img/followus.jpg"
+                                class="img-fluid" alt=""></a>
+                    </div>
+                </div>
+                <!-- ভিজিটর কাউন্টার -->
+                <div class="mt-4">
+                    <div class="home-sidemenu-header p-1 text-center">
+                        <h5 class="text-white fw-bold mt-2">ভিজিটর কাউন্টার</h5>
+                    </div>
+                    <div class="mt-2 bg-white">
+                        <ul>
+                            <li class="border-bottom">Today's Visitors: <span>494</span></li>
+                            <li class="border-bottom">Weekly Visitors: <span>1446</span></li>
+                            <li class="border-bottom">Monthly Visitors: <span>25461</span></li>
+                            <li class="border-bottom">Yearly Visitors: <span>284881</span></li>
+                            <li>Total Visitors: <span>312282</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ----- -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 p-2">
+                    <div class="border-bottom rounded-pill d-flex justify-content-center mb-2">
+                        <h6 class="">প্রয়োজনীয় লিংক</h6>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><a href="#">⭷ শিক্ষা মন্ত্রণালয়</a></li>
+                        <li><a href="#">⭷ জাতীয় ই-তথ্যকোষ</a></li>
+                        <li><a href="#">⭷ জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড</a></li>
+                        <li><a href="#">⭷ শিক্ষা বোর্ড</a></li>
+                        <li><a href="#">⭷ চট্টগ্রাম শিক্ষা বোর্ড</a></li>
+                        <li><a href="#">⭷ প্রাথমিক শিক্ষা অধিদপ্তর</a></li>
+                        <li><a href="#">⭷ মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর</a></li>
+                        <li><a href="#">⭷ বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
+                        <li><a href="#">⭷ শিক্ষক বাতায়ন</a></li>
+                        <li><a href="#">⭷ কিশোর বাতায়ন</a></li>
+                        <li><a href="#">⭷ ঢাকা শিক্ষা বোর্ড</a></li>
+                    </ul>
+                </div>
+                <!-- যোগাযোগ -->
+                <div class="col-md-4 p-2">
+                    <div class="border-bottom rounded-pill d-flex justify-content-center mb-2">
+                        <h6 class="">যোগাযোগ</h6>
+                    </div>
+                    <address>
+                        Chattogram Cantonment Public College<br>
+                        Baizid Bostami-4210, Chattogram Cantonment,<br>
+                        Chattogram , Bangladesh<br>
+                        Phone: 02339243170<br>
+                        Email: ccpc1961@yahoo.com
+                    </address>
+                </div>
+                <!-- Social Link -->
+                <div class="col-md-4 p-2">
+                    <div class="border-bottom rounded-pill d-flex justify-content-center mb-2">
+                        <h6 class="">সোশ্যাল লিংক</h6>
+                    </div>
+                    <div class="social-icons d-flex justify-content-center">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-3 ">
+                <div class="col-12 text-center">
+                    <p>&copy; 2023 - Chattogram Cantonment Public College All Rights Reserved. Developed by <a
+                            class="fw-semibold developer">Code Anchor</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.header-menu-link').hover(function () {
+            $(this).find('.header-menu-nav').toggle();
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var marquee = document.getElementById('marquee');
+        marquee.addEventListener('mouseover', function () {
+            marquee.classList.add('paused');
+        });
+        marquee.addEventListener('mouseout', function () {
+            marquee.classList.remove('paused');
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('ul.navbar-nav > li.dropdown').hover(function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+        }, function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+        });
+    });
+</script>
+
+</body>
+
+</html>
